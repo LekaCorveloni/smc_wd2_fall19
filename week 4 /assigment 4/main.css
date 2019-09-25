@@ -34,11 +34,12 @@ nav{
     background-color: white;
     position: fixed;
     width: 100%;
-
 }
 
+input#toggler:checked + nav {
+display: block;
 
-
+}
 
 .header-shim {
     height: 230px;

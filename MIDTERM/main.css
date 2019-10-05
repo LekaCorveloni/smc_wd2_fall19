@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import "colors.css";
 @import url(layout.css);
 
@@ -6,31 +7,90 @@
 
 
 h1 {
+    font-family: 'Raleway', sans-serif;
     font-size: 42px;
     color: darkgreen;
     text-align: center;
     display: block;
     margin: auto;
-    font-family: 'Marvel', sans-serif;
     padding: 28px;
+    
 }
 
 h2 {
-    font-family: 'Marvel', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 1px;
+    padding: 42px;
+   
+}
+
+
+h3 {
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: black;
     text-align: center;
     display: block;
     margin: auto;
-    padding: 32px;
+    padding: 6px;
    
 }
-
 p {
     font: 400 17px/29px georgia, serif;
     letter-spacing: 0.4px;
     color: black;
     display: block;
     margin: auto;
-    width: 95%;
+    width: 74%;
     text-align: justify;
+}
+
+hr {
+    display: block;
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+label, input {
+    font:  400  17px/29px  georgia, serif;
+    display: block;
+    width: 43%;
+    margin: 11px -5px;
+    padding: 10px;
+    border: 0px 0px 10px 0px;
+   
+ 
+    
+}
+
+.contact{
+
+    font: 400 17px/29px georgia, serif;
+    text-align: left;
+    color: black;
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+    
+  
+
+}
+
+.footer {
+    position:static;
+    display: block;
+    width: 100%;
+    background-color:white;
+    height: 50px;
+    color:white;
+    text-align: center;
+    padding: 20px;

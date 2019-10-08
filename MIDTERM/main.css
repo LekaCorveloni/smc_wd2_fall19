@@ -85,12 +85,3 @@ label, input {
 
 }
 
-.footer {
-    position:static;
-    display: block;
-    width: 100%;
-    background-color:white;
-    height: 50px;
-    color:white;
-    text-align: center;
-    padding: 20px;

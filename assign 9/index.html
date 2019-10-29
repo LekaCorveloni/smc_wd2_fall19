@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <heather>
+        <nav id="navbar">
+            <button id="colorButton">Color Me!</button>
+            <button id="capitalizeMe">Capitalize Me!</button> 
+            <button id="centerMe">Center Me!</button> 
+            <button id="underlineMe">Underline Me!</button> 
+        </nav>
+    </heather>
+
+    <main>
+        <div id="contentMain">
+            <h1>my name is leticia</h1>
+        </div>
+        <div id="capitalletter">
+            <h1>my name is leticia</h1>
+        </div>
+        <div id="centerletter">
+            <h1>my name is leticia</h1>
+        </div>
+        <div id="underlineletter">
+                <h1>my name is leticia</h1>
+            </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        document.getElementById("colorButton").addEventListener( "click", function(){
+            
+            var mainContent = document.getElementById("contentMain");
+            var redComponent = Math.random()*255; 
+            var greenComponent= Math.random()*255; 
+            var blueComponent = Math.random()*255; 
+
+            var compRGBString = "rgb("+ redComponent + "," + greenComponent + "," + blueComponent + ")"; 
+
+            mainContent.style.backgroundColor = compRGBString;
+
+            //document.getElementById("contentMain").style.backgroundColor = "rgb(0, "+(math.random()*255)+" ,255)";
+
+
+        });
+        document.getElementById("contentMain").style.backgroundColor = "rgb(255,0,0)";
+
+        prompt("this is our very first javascript written!");
+
+    </script>
+
+    <script>
+        document.getElementById("capitalizeMe").addEventListener("click", function(){
+          document.getElementById("capitalletter").style.textTransform = "uppercase";
+        });
+    </script>
+    <script>
+        document.getElementById("centerMe").addEventListener("click", function(){
+          document.getElementById("centerletter").style.textAlign = "center";
+        });
+    </script>
+    <script>
+        document.getElementById("underlineMe").addEventListener("click", function(){
+          document.getElementById("underlineletter").style.textDecoration = "underline";
+        });
+    </script>
+
+</body>
+</html>

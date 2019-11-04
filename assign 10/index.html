@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vegetables</title>
+</head>
+<style>
+        body {
+          background-color:rgb(219, 255, 219);
+        }
+        </style>
+
+<body>
+    <main>
+        <section>
+            <img src="https://imgc.artprintimages.com/img/print/watercolor-fresh-vegetables-and-herbs_u-l-q1bzdch0.jpg" id="imageToSwitch" alt="vegetables">
+            <button id="imgToggle">Switch!</button>
+        </section>
+
+        <section>
+            <form action="" method="GET">
+                <select id="make">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="🥦broccoli">🥦broccoli</option>
+                    <option value="🥕carrot">🥕carrot</option>
+                    <option value="🍆 eggplant">🍆 eggplant</option> 
+                </select>
+            </form>
+        </section>
+    
+        <section>
+            <p>  
+                <select id="model">
+                
+
+                </select>
+            </p>
+        </section>
+    
+    </main>
+
+
+
+    <script>
+        // we'll set up the variables before we describe the function - 
+        // this way running the function will not change them
+        var image2URL = "https://www.melissas.com/v/vspfiles/photos/6-2T.jpg";
+        var image2Alt = "frame";
+        var switchingImage = document.getElementById("imageToSwitch");
+        var image1URL = switchingImage.src;
+        var image1Alt = switchingImage.alt;
+        // listen for a click on an '#imgToggle' button and run the following function
+        document.getElementById('imgToggle').addEventListener('click', function(){
+            // for debugging - print the contents of the image1URL variable in the console
+            console.log(image1URL);
+            // if the source of the image is the same as the contents of the image2URL variable
+            if( switchingImage.src === image2URL ){
+                switchingImage.src = image1URL; //make the source be the 1st URL
+                switchingImage.alt = image1Alt; //make the alt attribute be the 1st alt attribute
+            }
+            else { //otherwise - here we'd expect the source of the image is the same as the contents of the image1URL variable
+                switchingImage.src = image2URL; //make the source be the 2nd URL
+                switchingImage.alt = image2Alt; //make the alt attribute be the 2nd alt attribute
+            }
+        })
+        // we'll again set up the variables before the function
+        var makeSelect = document.getElementById('make');
+        var modelSelect = document.getElementById('model');
+        // here we'll listen for a change in selection and the following function
+        makeSelect.addEventListener( 'change', function(){
+            // for debugging - print the value of the current selection
+            console.log(makeSelect.value);
+            
+            // if the current value is '🥕carrot'
+            if(makeSelect.value === '🥕carrot') {
+                // put the following string as a child in the '#model' element
+                modelSelect.innerHTML = '<option value="text">The carrot is a root vegetable, usually orange in colour, though purple, black, red, white, and yellow cultivars exist</option>';
+            }
+            // if the current value is '🥦broccoli'
+            else if(makeSelect.value === '🥦broccoli') {
+                // put the following string as a child in the '#model' element
+                modelSelect.innerHTML = '<option value="text">broccoli is an edible green plant in the cabbage family whose large flowering head and stalk is eaten as a vegetable.</option>';
+            }
+            // if the current value is '🍆 eggplant'
+            else if(makeSelect.value === '🍆 eggplant') {
+                // put the following string as a child in the '#model' element
+                modelSelect.innerHTML = '<option value="text">Eggplant, aubergine, or brinjal is a plant species in the nightshade family Solanaceae.</option>';
+            }
+            
+        } )
+        
+    </script>
+    
+</body>
+</html>

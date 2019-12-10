@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import "colors.css";
+@import url(layout.css);
+
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 47px;
+    position:absolute;
+    top: 400px;
+    left: 20px;
+    color: white;
+    text-shadow: 1px 0px 4px darkgray;
+}

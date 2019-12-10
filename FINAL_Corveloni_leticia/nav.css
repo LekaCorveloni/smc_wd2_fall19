@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 header {
-    background-color: black;
+    background-color:rgb(222, 222, 222);
     top: 0px;
     position: fixed;
     width: 100%;
@@ -12,9 +14,18 @@ header input#toggler {
 }
 
 header label img {
-    width: 35px;
+    width: 119px;
     height: auto;
     padding: 10px;
+    
+}
+
+#imageToSwitch {
+    max-width: 88px;
+}
+
+label {
+    color: black;
 }
 
 .header-shim {
@@ -37,7 +48,7 @@ nav ul {
 }
 
 nav li {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     padding: 10px 0px;
     text-align: center;
 }
@@ -49,15 +60,16 @@ nav li:first-child {
 
 
 nav ul a {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: white ;
+    color: black ;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 .highlight {
-    color: grey;
-}
+    border-bottom: 2px solid black;
+ }
 
 
 
@@ -99,6 +111,8 @@ nav ul a {
         border-top: 5px solid white;
         padding-top: 18px;
     }
+
+    
 
 }
 

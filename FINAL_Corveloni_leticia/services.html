@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Snow Ball Church</title>
+
+</head>
+
+<body>
+         <div id="content"> 
+            <header>
+                 <label for="toggler">
+                     <!-- <img src="snowball logo.png" id="imageToSwitch" alt="church banner">  -->
+                     <img id="imageToSwitch" onclick="changeImage()" src="snowball logo.png">  
+                     </label>
+                    <input type="checkbox" id="toggler">
+                        
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html" class="highligh">services</a></li>
+                            <li><a href="give.html">give</a></li>
+                        </ul>
+                    </nav>
+             </header>
+                            
+            <div class="header-shim"></div>
+           
+            <main>
+
+                <div class="mainbanner">       
+              <img src="service.png" alt="church banner">
+              </div>
+                                 
+
+   
+
+        <div class="grid1">
+           
+
+            <div></div>
+
+            <div>
+                <h2>Don't miss any service!</h2>
+                <p>We are live every sunday on our youtube channel. You will never miss out on a Sunday service again.</p>
+                
+            </div>
+
+            <div></div>
+
+        </div>
+
+        <h2>Recent sermons</h2>
+
+        <div class="grid7">
+                <div></div>
+
+                <div>
+                        <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/f5ITG6nZqaU">
+                        </iframe>  
+                        <div>Like esther, "Who knows if perhaps you were made queen or just such a time as this? Esther 4:14. Everything you have today it's been your prayer in the past. </div>
+                        <button> read more</button>
+                    
+                </div>
+
+                <div>
+                        <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/gAwXnOhMHlI">
+                        </iframe>
+
+                        <div> 1 Thessalonians 5 "Always be jouyful. Never stop praying. be thankful in all circunstances, For this is God's will for who belong to Jesus Christ.</div>
+                        <button> read more</button>
+                </div>
+        
+    
+                <div></div>
+                
+        </div>
+
+        <div class="grid7">
+                <div></div>
+
+                <div>
+                        <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/H2R5Y5REStE">
+                        </iframe>  
+                        <div>I have made a decision to be happy. The same energy you spend being unhappy you can put towards being positive and achieving your goals.</div>
+                        <button> read more</button>
+                    
+                </div>
+
+                <div>
+                        <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/uaHZiGRQn1U">
+                        </iframe>
+
+                        <div>Sometimes is time to let people go from your life. Perhaps your path will meet with this person in the future, but if for now they have to go, let them go.</div>
+                        <button> read more</button>
+                </div>
+        
+    
+                <div></div>
+                
+        </div>
+
+
+
+
+        <div class="grid4">
+    
+                <div>
+                       <a target="_blank" href="https://www.facebook.com/snowballchurchla/"> <img class="socialmedia" src="index.png" alt="facebookicon"></a>
+                       <a target="_blank" href="https://www.instagram.com/snowballchurchla/?hl=en">  <img class="socialmedia" src="instagram.png" alt="instagramicon"></a>
+                       <a target="_blank" href="https://www.youtube.com/channel/UCEOBeBLIWntSbQlfsuPo58Q">  <img class="socialmedia" src="youtube-logotype.png" alt="youtubeicon"></a>
+                    
+                </div>
+                
+    
+         </div>
+
+    </main>  
+
+
+        <div class="footer">
+        @ 2019 Leticia Corveloni
+        </div>
+
+        </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+
+<script>
+    function changeImage()
+    {
+    element=document.getElementById('imageToSwitch')
+    if (element.src.match("churchicon"))
+    {
+    element.src="snowball logo.png";
+    }
+    else
+    {
+    element.src="churchicon.png";
+    }
+    }
+</script>
+
+</body>
+</html>

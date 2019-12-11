@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Snow Ball Church</title>
+
+</head>
+
+<body>
+    <div id="content"> 
+        <header>
+                <label for="toggler">
+                    <img id="imageToSwitch" onclick="changeImage()" src="snowball logo.png">  
+                    </label>
+                    <input type="checkbox" id="toggler">
+                        
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html" class="highlight">about</a></li>
+                            <li><a href="services.html">services</a></li>
+                            <li><a href="give.html">give</a></li>
+                        </ul>
+                    </nav>
+            </header>
+        
+            <div class="header-shim"></div>
+           
+        <main>
+
+                <div class="mainbanner">       
+              <img src="boladeneve.jpg" alt="church banner">
+              </div>
+
+            <div class="grid10">
+           
+
+                
+        
+                
+                        <h2>About us</h2>
+                        <div class="about">
+                        <p class="aboutme"> The history of the Snowball Church is mixed with the very story of the Apostle Rina. After hepatitis, severe pain, and a personal experience with God, an uncompromising meeting was born in December 93. Before long, a name came to express the group very well: a snowball that, starting small, became an avalanche. This Snowball kept rolling and fulfilling its role.
+
+                            <br>In 94, we received spiritual coverage. In the early nineties, there were some changes, and sending our leaders to expand the work, the Snowball Evangelical Church, or Snowball Church, was born to the intimates. In those days, God raised a surfwear business owner, owner of HD (Hawaiian Dreams) to lend us an auditorium with a capacity of 130 people. At where? 21 de Abril Street in the Brás neighborhood, São Paulo / SP. <br>
+                            
+                            <br>"What now? The service will start, the hall is packed, but where do I support my Bible?" A surf company also sells boards, and one of them a longboard. Thus she eventually became a pulpit to support the Bible, helping to compose the Church's identity. These were days of great joy and wonderful services during the ten months we were there.<br>
+                            
+                            <br>In January 2000 we had the first service in Lapa, Rua Marco Aurélio, 496. It was small… In 2004, we moved to 734 Turiassu Street in Perdizes and stayed there for seven years.<br>
+                            
+                            Since then, the Church has been growing, maturing and making history. In 2010, the headquarters moved again, now, to the neighborhood of Lapa, at Rua Clélia, 1517.
+                            
+                            <br>Today we continue to work hard, guided by the mission and vision God has given us and in maintaining the ministries and work fronts that complement our purposes and justify our existence.<br>
+                            
+                            <br>Apostle Rina (Ap. Rina)<br></p>
+                        </div>
+                        
+    
+
+                    <div class="hide">
+                        <p>A história da Igreja Bola de Neve confunde-se com a própria história do Apóstolo Rina. Depois de uma hepatite, dores muito fortes e uma experiência pessoal com Deus, nascia, em Dezembro de 93, uma reunião descompromissada. Não demorou a aparecer um nome que expressasse muito bem o grupo: uma bola de neve que, começando pequena, virava uma avalanche. <br>Essa Bola de Neve seguiu rolando e cumprindo seu papel.<br>
+
+                        <br>   Em 94, recebemos uma cobertura espiritual. No início de 99, ocorreram algumas mudanças e enviando nossos líderes para expandir a obra, nascia a Igreja Evangélica Bola de Neve, ou Bola de Neve Church, para os íntimos. Naqueles dias, Deus levantou um empresário do mercado surfwear, proprietário da HD (Hawaiian Dreams) para nos emprestar um auditório com capacidade para 130 pessoas. Onde? Rua 21 de Abril no Bairro do Brás, em São Paulo/SP.<br>
+                            
+                        <br>    "E agora? O culto vai começar, o salão está lotando, mas onde eu apoio minha Bíblia?". Uma empresa de surf também vende pranchas, e uma delas, um longboard. Assim, ela acabou virando púlpito para apoiar a Bíblia, ajudando a compor a identidade da Igreja. Foram dias de muita alegria e cultos maravilhosos durante os dez meses que ali ficamos.<br>
+                            
+                            Em Janeiro de 2000, tivemos o primeiro culto na Lapa, Rua Marco Aurélio, 496. Ficou pequeno … Em 2004, mudamos para a Rua Turiassu, 734, em Perdizes e lá ficamos por sete anos.
+                            
+                            De lá para cá, a Igreja vem crescendo, amadurecendo e fazendo história. Em 2010, a sede mudou novamente, agora, para o bairro da Lapa, na Rua Clélia, 1517.
+                            
+                         <br>   Hoje, continuamos trabalhado muito, guiados pela missão e visão que Deus tem nos dado e na manutenção dos ministérios e frentes de trabalho que complementam os propósitos e justificam nossa existência.<br>
+                            
+                           <br> Apóstolo Rina ( Ap. Rina )<br>
+
+                        </p>
+                    </div>
+
+                    <button class="translate">Translate Portuguese</button>
+        
+                    
+        
+                </div>
+
+            
+                
+
+        </main>  
+
+
+            <div class="footer">
+            @ 2019 Leticia Corveloni
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ 
+
+    
+<script>
+
+function changeImage()
+            {
+            element=document.getElementById('imageToSwitch')
+            if (element.src.match("churchicon"))
+            {
+            element.src="snowball logo.png";
+            }
+            else
+            {
+            element.src="churchicon.png";
+            }
+            }
+
+        $(document).ready(function(){
+            $(".translate").click(function () {
+  $(".hide").slideDown();
+});
+
+$(".translate").click(function () {
+  $(".about").slideUp();
+});      
+
+});     
+
+
+
+</script>
+
+</body>
+</html>

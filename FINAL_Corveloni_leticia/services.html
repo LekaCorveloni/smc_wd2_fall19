@@ -21,6 +21,7 @@
                     <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">about</a></li>
                             <li><a href="services.html" class="highligh">services</a></li>
                             <li><a href="give.html">give</a></li>
                         </ul>
@@ -62,18 +63,21 @@
                         <iframe width="420" height="315"
                         src="https://www.youtube.com/embed/f5ITG6nZqaU">
                         </iframe>  
-                        <div>Like esther, "Who knows if perhaps you were made queen or just such a time as this? Esther 4:14. Everything you have today it's been your prayer in the past. </div>
-                        <button> read more</button>
-                    
+                        <div>Like esther, "Who knows if perhaps you were made queen or just such a time as this?  
+                            <span class="dots">...</span><span id="more"> or just such a time as this? Esther 4:14. Everything you have today it's been your prayer</span>
+                        <button class="read">Read more</button>
+                    </div>
                 </div>
 
                 <div>
                         <iframe width="420" height="315"
                         src="https://www.youtube.com/embed/gAwXnOhMHlI">
                         </iframe>
-
-                        <div> 1 Thessalonians 5 "Always be jouyful. Never stop praying. be thankful in all circunstances, For this is God's will for who belong to Jesus Christ.</div>
-                        <button> read more</button>
+                        <div> 1 Thessalonians 5 "Always be jouyful. Never stop praying. For this is God's will for who belong to Jesus Christ.
+                            <span class="dots">...</span><span id="more">  be thankful in all circunstances, For this is God's will for who belong to Jesus Christ.</span>
+                        <button class="read2"> Read more</button>
+                        </div>
+                        
                 </div>
         
     
@@ -88,8 +92,11 @@
                         <iframe width="420" height="315"
                         src="https://www.youtube.com/embed/H2R5Y5REStE">
                         </iframe>  
-                        <div>I have made a decision to be happy. The same energy you spend being unhappy you can put towards being positive and achieving your goals.</div>
-                        <button> read more</button>
+                        <div>I have made a decision to be happy. The same energy you spend being unhappy you can put towards
+                             <span class="dots">...</span><span id="more">being positive and achieving your goals. perhaps your path will meet with this.</span>
+                             <button class="read3"> Read more</button>
+                        </div>
+                       
                     
                 </div>
 
@@ -98,8 +105,10 @@
                         src="https://www.youtube.com/embed/uaHZiGRQn1U">
                         </iframe>
 
-                        <div>Sometimes is time to let people go from your life. Perhaps your path will meet with this person in the future, but if for now they have to go, let them go.</div>
-                        <button> read more</button>
+                        <div>Sometimes is time to let people go from your life. Perhaps your path will meet with this person in the future,
+                            <span class="dots">...</span><span id="more">  but if for now they have to go, let them go.</span>
+                            <button class="read4"> Read more</button>
+                        </div>
                 </div>
         
     
@@ -148,6 +157,71 @@
     element.src="churchicon.png";
     }
     }
+
+
+  
+$(document).ready(function(){
+    $(".read").click(function(){
+        $(this).prev().toggle();
+        $(this).siblings('.dots').
+            toggle();
+            if($(this).text()=='read more'){
+                $(this).text('read less'); 
+            }
+            else{
+                $(this).text('read more'); 
+            }
+
+        });  
+    });
+
+$(document).ready(function(){
+$(".read2").click(function(){
+    $(this).prev().toggle();
+    $(this).siblings('.dots').
+        toggle();
+        if($(this).text()=='read less'){
+            $(this).text('read less'); 
+        }
+        else{
+            $(this).text('read more'); 
+        }
+
+    });  
+});    
+
+$(document).ready(function(){
+$(".read3").click(function(){
+    $(this).prev().toggle();
+    $(this).siblings('.dots').
+        toggle();
+        if($(this).text()=='read more'){
+            $(this).text('read less'); 
+        }
+        else{
+            $(this).text('read more'); 
+        }
+
+    });  
+});  
+
+$(document).ready(function(){
+$(".read4").click(function(){
+    $(this).prev().toggle();
+    $(this).siblings('.dots').
+        toggle();
+        if($(this).text()=='read more'){
+            $(this).text('read less'); 
+        }
+        else{
+            $(this).text('read more'); 
+        }
+
+    });  
+});    
+
+</script>
+
 </script>
 
 </body>

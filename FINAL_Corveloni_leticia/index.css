@@ -71,12 +71,24 @@ p {
     font: 400 17px/29px georgia, serif;
     letter-spacing: 0.4px;
     color: black;
-    display: block;
     margin: auto;
     text-align: center;
     padding-bottom: 102px;
     max-width: 481px;
+
+  
+}
+
+.aboutme{
+    font: 400 15px/29px georgia, serif;
+    letter-spacing: 0.4px;
+    color: black;
+    padding-bottom: 102px;
     
+}
+
+.aboutme > p {
+    text-align: left;
 }
 
 .iconsp {
@@ -190,6 +202,8 @@ font: 400 14px/29px georgia, serif;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
+
+
 
 .grid9 > div{
     padding: 25px;
@@ -315,6 +329,19 @@ button:hover {
     color: white;
   }
 
+.grid10 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid10 > div{
+    padding: 20px;
+    color: black;
+    background-color: #d2d1d1;
+
+
+}
+
 .grid4 {
     display: grid;
     grid-template-columns: 1fr;
@@ -342,3 +369,8 @@ button:hover {
     height: 70px;
     
   }
+
+  .hide {
+      display:none;
+  }
+
